@@ -8,7 +8,7 @@ class Hero(Attacker):
         self._opit = 0
         self._name = name
     def attack(self, target):
-        self._health -= self._attack
+        target._health -= self._attack
         #return self._health
 
 
