@@ -33,8 +33,8 @@ class GreenDragon(Dragon):
         self._color = 'зелёный'
 
     def question(self):
-        x = randint(1,100)
-        y = randint(1,100)
+        x = rn.randint(1,100)
+        y = rn.randint(1,100)
         self.__quest = str(x) + '+' + str(y)
         self.set_answer(x + y)
         return self.__quest
@@ -47,8 +47,8 @@ class BlackDragon(Dragon):
         self._color = 'чёрный'
 
     def question(self):
-        x = randint(1,100)
-        y = randint(1,100)
+        x = rn.randint(1,100)
+        y = rn.randint(1,100)
         self.__quest = str(x) + '*' + str(y)
         self.set_answer(x * y)
         return self.__quest
@@ -61,8 +61,8 @@ class RedDragon(Dragon):
         self._color = 'красный'
 
     def question(self):
-        x = randint(1,100)
-        y = randint(1,100)
+        x = rn.randint(1,100)
+        y = rn.randint(1,100)
         self.__quest = str(x) + '-' + str(y)
         self.set_answer(x - y)
         return self.__quest
